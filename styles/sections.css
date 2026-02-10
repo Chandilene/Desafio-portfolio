@@ -1,0 +1,224 @@
+#intro {
+  min-height: 100dvh;
+  background-image: url(../assets/Background_Intro.png);
+  background-size: cover;
+  padding-top: 120px;
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .user {
+      position: relative;
+      width: fit-content;
+      margin-bottom: 56px;
+
+      .border-red {
+        width: 96px;
+        height: 96px;
+        border: 2px solid var(--red);
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+
+        img {
+          padding: 4px;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 100%;
+        }
+      }
+
+      .code-icon {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        bottom: -6px;
+        right: -1px;
+      }
+    }
+
+    .content {
+      width: 680px;
+
+      .greetings {
+        color: var(--gray-200);
+        font: var(--subtitle);
+      }
+
+      h1 {
+        padding: 8px 0 20px;
+        color: var(--gray-100);
+        font: var(--title-lg);
+      }
+
+      p {
+        color: var(--gray-300);
+        font: var(--text-sm);
+      }
+    }
+  }
+
+  .tags {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .list-tech {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      padding: 80px 0 94px;
+
+      li {
+        border-radius: 25px;
+        padding: 8px 16px;
+        background-color: var(--gray-400);
+        gap: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        span {
+          color: var(--gray-200);
+          font: var(--text-md);
+        }
+      }
+    }
+  }
+}
+
+#projects {
+  height: auto;
+  background-color: var(--gray-500);
+  padding-top: 70px;
+  padding-bottom: 144px;
+
+  header {
+    text-align: center;
+  }
+
+  .card {
+    width: 330px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray-400);
+    border-radius: 12px;
+
+    &:hover {
+      border: 1px solid var(--gray-200);
+    }
+
+    img {
+      margin-block: 12px 20px;
+      width: 306px;
+      height: 156px;
+      border-radius: 8px;
+    }
+
+    figcaption {
+      padding: 4px;
+      margin: 0 12px 17px 12px;
+    }
+  }
+}
+
+#services {
+  background-color: var(--gray-600);
+  padding: 88px 0 120px;
+
+  header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  .card-services {
+    border: 1px solid var(--gray-500);
+    border-radius: 12px;
+    width: 280px;
+    height: 155px;
+    padding: 20px;
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+#contact {
+  min-height: 100dvh;
+  background-image: url(../assets/Background_Contacts.png);
+  background-size: contain;
+  padding: 128px 0 200px;
+
+  header {
+    text-align: center;
+
+    .subtitle-contact {
+      color: var(--purple);
+      margin-bottom: 8px;
+    }
+    .paragraf-contact {
+      margin: 8px 0 48px;
+      color: var(--gray-200);
+      font: var(--text-md);
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      flex-direction: column;
+      display: flex;
+      gap: 1rem;
+      width: 100%;
+      max-width: 400px;
+      padding: 0;
+      list-style: none;
+
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        background-color: var(--gray-400);
+        padding: 20px 24px;
+        border-radius: 8px;
+       
+
+        div {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+      }
+
+      .blue:hover{
+        border: 1px solid var(--blue);
+      }
+      .purple:hover{
+        border: 1px solid var(--purple);
+      }
+      .gray:hover{
+        border: 1px solid var(--gray-200);
+      }
+      .red:hover{
+        border: 1px solid var(--red);
+      }
+    }
+  }
+}
