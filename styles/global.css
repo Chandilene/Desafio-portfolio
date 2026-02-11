@@ -33,6 +33,10 @@
   --text-sm: 400 14px/140% var(--font-family-maven);
 }
 
+main{
+  width: 100%;
+}
+
 .subtitle {
   color: var(--red);
   font: var(--subtitle);
@@ -49,6 +53,7 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   justify-self: center;
   gap: 24px;
+  
 }
 
 .content-tag {
